@@ -25,9 +25,9 @@
 
 ## 例子
 
-![&#x89E3;&#x6C7A;&#x6B63;&#x6574;&#x6578;m&#x662F;&#x4E0D;&#x662F;&#x6B63;&#x6574;&#x6578;n&#x7684;&#x500D;&#x6578;&#x554F;&#x984C;&#x7684;&#x6D41;&#x7A0B;&#x5716;](../.gitbook/assets/image.png)
+![&#x89E3;&#x6C7A;&#x6B63;&#x6574;&#x6578;m&#x662F;&#x4E0D;&#x662F;&#x6B63;&#x6574;&#x6578;n&#x7684;&#x500D;&#x6578;&#x554F;&#x984C;&#x7684;&#x6D41;&#x7A0B;&#x5716;](.gitbook/assets/image.png)
 
-![C++ &#x7A0B;&#x5F0F;](../.gitbook/assets/image%20%281%29.png)
+![C++ &#x7A0B;&#x5F0F;](.gitbook/assets/image%20%281%29.png)
 
 ## 如何表示演算法?
 
@@ -47,11 +47,11 @@
 
 ### 流程圖
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/image%20%282%29.png)
 
 ### 虛擬碼\)
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 ## pseudo code
 
