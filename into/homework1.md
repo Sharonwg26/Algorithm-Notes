@@ -1,6 +1,6 @@
 # Homework1
 
-#### tags: `Algorithm` <a id="tags-Algorithm"></a>
+**tags: Algorithm**
 
 ## Handwrite <a id="Handwrite"></a>
 
@@ -8,7 +8,7 @@
 
 Write an algorithm using the pseudo code to input an integer n and output \(decide\) if n is a prime.\)
 
-```cpp
+```text
 Algorithm PrimeTest1(n)
 
 Input: 一個大於2的正整數n
@@ -23,7 +23,7 @@ for i = 2 to n-1 do
 
 \(Write an algorithm using the pseudo code to input an integer n and output the n’s largest factor
 
-```cpp
+```text
 Algorithm Factor(n)
 
 Input: 一個大於2的正整數n
@@ -38,7 +38,7 @@ for i=1 to n
 
 \(Write an algorithm using the pseudo code to input an integer n and output the total summation of all n’s factors except n.\)
 
-```cpp
+```text
 Algorithm FactorSum(n)
 
 Input: 一個大於2的正整數n
@@ -55,7 +55,7 @@ return  sum
 
 \(Write an algorithm using the pseudo code to input integers n and m, and output all n’s factors larger than m and less than n.\)
 
-```cpp
+```text
 Algorithm FactorSum2(m,n)
 
 Input: 大於2的正整數m,n
@@ -72,7 +72,7 @@ return  sum
 
 \(Write an algorithm using the pseudo code to input an integer n and output \(decide\) if n is a perfect number. Note that a perfect number is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself.\)
 
-```cpp
+```text
 Algorithm PerfectNumber(n)
 
 Input: 一個大於2的正整數n
@@ -91,7 +91,7 @@ if sum=n then return true
 \(Write an algorithm to input an integer n and output \(decide\) if n is a happy number.\)  
  註: 快樂數有以下的特性：在給定的進位制下，該數字所有數位\(digits\)的平方和，得到的新數再次求所有數位的平方和，如此重複進 行，最終結果必為1。例 如，以十進位為例：28 → 22+82= 68 → 62+82=100 → 12+02+02=1，因此28是快樂數
 
-```cpp
+```text
 Algorithm HappyNumber(n)
 
 Input: 一個大於0的正整數n
@@ -112,106 +112,23 @@ while True:
 
 ### Above Average <a id="Above-Average"></a>
 
-UVa 10370-Above Average
+[UVa 10370-Above Average](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1311)
 
-```cpp
-//c代表幾組資料
-//n代表班級總人數 (1<= N<=1000)
-//score代表分數 (0<=分數<=100)
+#### Solution <a id="Solution"></a>
 
-#include <iostream>
-#include <cmath> 
-using namespace std;
-
-int main() {
-	int c=0,n=0;
-	float score[1000],avg,per;
-	while(cin>>c){
-		if(c>100||c<1) break;
-		for(int i=1;i<=c;i++){
-			cin>>n;
-			if(n<0||n>100) break;
-			avg=0.0;
-			for(int j=0;j<n;j++){
-				cin>>score[j];
-				avg+=score[j];
-			}
-			avg/=n;
-			per=0.0;
-			for (int s=0;s<n;s++){
-				if(score[s]>avg) per++;
-			}
-			printf("%.3f%%\n",per*100.0/n);
-		}
-	}
-	return 0;
-}
-```
+[https://github.com/Sharonwg26/UVA/blob/master/10370-Above Average.cpp](https://github.com/Sharonwg26/UVA/blob/master/10370-Above%20Average.cpp)
 
 ### Prime factorization <a id="Prime-factorization"></a>
 
-UVa583-Prime factorization
+[UVa583-Prime factorization](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&category=7&page=show_problem&problem=524)
 
-```cpp
-#include <iostream>
-using namespace std;
+#### Solution <a id="Solution1"></a>
 
-int main(){
-	int n=0,sum;
-    while(cin>>n){
-    	cout<<n<<"=";
-    	if(n==1) cout<<n;
-		for(int i=2;i<=n;i++){
-                while(n%i==0){
-                    if(n%(i*i)==0){
-						sum=0;
-						while(n%i==0){
-							sum++;
-							n/=i;
-						}
-						cout<<i<<"^"<<sum;
-					}
-					else{
-						cout<<i;
-						n/=i;
-					}
-					if(n>1)cout<<"*";
-                }
-      	}
-      cout<<"\n";
-    } 
-    return 0;
-}
-```
+[https://github.com/Sharonwg26/UVA/blob/master/583-Prime factorization.cpp](https://github.com/Sharonwg26/UVA/blob/master/583-Prime%20factorization.cpp)
 
 ### Odd Sum without prime <a id="Odd-Sum-without-prime"></a>
 
-```cpp
-//c代表幾組資料
+#### Solution <a id="Solution2"></a>
 
-#include <iostream>
-using namespace std;
-
-int main(){
-	int a=0,b=0,c=0,n=0,s=0;
-    cin >>c;
-	for(int i=0;i<c;i++){
-        cin>>a>>b;
-        s=0;
-        for(n=a;n<=b;n++){
-        	if(n%2!=0){
-        		for(int i=2;i<=n/2;i++){
-					if(n%i==0){
-						s=s+n;
-						break;	
-					}		
-				}
-				
-			}
-		}
-		cout<<s<<"\n";		
-    }
-	return 0;
-}
-```
+[https://github.com/Sharonwg26/UVA/blob/master/583-Prime factorization.cpp](https://github.com/Sharonwg26/UVA/blob/master/583-Prime%20factorization.cpp)
 

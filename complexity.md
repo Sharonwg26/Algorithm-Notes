@@ -136,7 +136,9 @@ for i=n-1 to 1 do
 return A
 ```
 
-![](https://i.imgur.com/YR0TvtD.png)  
+![](https://i.imgur.com/YR0TvtD.png)
+
+  
  當一個排序演算法能夠讓具有相同值的元素維持原來的相對位置時，我們稱這種排序演算法為穩定\(stable\)排序演算法。
 
 不需要額外記憶體空間的排序演算法稱為就地\(in place\)演算法。

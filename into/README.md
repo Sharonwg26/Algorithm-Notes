@@ -1,4 +1,4 @@
-# 認識演算法 - HackMD
+# 認識演算法
 
 #### tags: `Algorithm` <a id="tags-Algorithm"></a>
 
