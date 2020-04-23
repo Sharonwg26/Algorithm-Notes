@@ -92,7 +92,9 @@ Output: 目標狀態(或目標節點)對應的解答
 給定一個整數集合S和一個整數m，問是否存在S的非空子集合T，使得子集合T中的整數總和為m。
 
 給定一個整數集合S ={6, 5, 1, 3, 8} ，回答是否存在S的非空子集合T，使得子集合T中的整數總和為10。  
- ![](https://i.imgur.com/L8QLlIF.png)
+ 
+
+![](https://i.imgur.com/L8QLlIF.png)
 
 ## 漢米爾頓迴路問題 \(Hamiltonian circuit\) <a id="&#x6F22;&#x7C73;&#x723E;&#x9813;&#x8FF4;&#x8DEF;&#x554F;&#x984C;-Hamiltonian-circuit"></a>
 
