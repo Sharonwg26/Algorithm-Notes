@@ -7,4 +7,5 @@
 * [搜尋演算法](search.md)
 * [分治演算法](divide-and-conquer.md)
 * [刪尋演算法](prune-and-search.md)
+* [貪婪演算法](greedy.md)
 
