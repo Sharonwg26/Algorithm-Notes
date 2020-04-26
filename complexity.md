@@ -30,17 +30,17 @@
 
 * 漸近上界\(Asymptotic Upper Bound\)
 
-![](.gitbook/assets/image%20%285%29.png)
+![](.gitbook/assets/image%20%284%29.png)
 
 * 漸近下界\(Asymptotic Lower Bound \)
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 
 
 
 * 漸近緊界\(Asymptotic Tight Bound \)
 
-![](.gitbook/assets/image%20%287%29.png)
+![](.gitbook/assets/image%20%281%29.png)
 
 ## 降低演算法時間複雜度量級 <a id="&#x964D;&#x4F4E;&#x6F14;&#x7B97;&#x6CD5;&#x6642;&#x9593;&#x8907;&#x96DC;&#x5EA6;&#x91CF;&#x7D1A;"></a>
 

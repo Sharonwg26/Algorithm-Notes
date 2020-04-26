@@ -23,7 +23,7 @@
 ### 時間複雜度 <a id="&#x6642;&#x9593;&#x8907;&#x96DC;&#x5EA6;0"></a>
 
 ![](https://i.imgur.com/q9YxtJo.png)  
- Let n/2k=1,so n=2k,and k=logn  
+ Let n/2^k=1,so n=2^k,and k=logn  
  T\(n\) = T\(1\)+k = 1+k =O\(log n\)
 
 ## 選取與中位數演算法 <a id="&#x9078;&#x53D6;&#x8207;&#x4E2D;&#x4F4D;&#x6578;&#x6F14;&#x7B97;&#x6CD5;"></a>
@@ -37,12 +37,14 @@
 
 1. 令S={a1, a2, …, an}
 2. 找出 p屬於S, 用p將S分割成3個子集合S1,S2,S3:
-3. S1= aiai&lt; p,1&lt;=i&lt;=n
-4. S2= aiai= p , 1&lt;=i&lt;=n
-5. S3= aiai&gt; p , 1&lt;=i&lt;=n
+3. S1= ai \| ai &lt; p,1&lt;=i&lt;=n
+4. S2= ai \| ai = p , 1&lt;=i&lt;=n
+5. S3= ai \| ai &gt; p , 1&lt;=i&lt;=n
 6. 若 \|S1\|&gt;k，代表第k小的元素在S1中，我們可刪除S2和S3。
 7. 否則，若 \|S1\|+\|S2\|&gt;k，則p就是S中第k小的元素。
-8. 否則，代表第k小的元素是S3中第\(k -\|S1\|-\|S2\|\)小的元素，我們可刪除S1和S2。  ![](https://i.imgur.com/YSFS5Qx.png)
+8. 否則，代表第k小的元素是S3中第\(k -\|S1\|-\|S2\|\)小的元素，我們可刪除S1和S2。  
+
+![](https://i.imgur.com/YSFS5Qx.png)
 
 ### Algorithm <a id="Algorithm0"></a>
 
@@ -52,6 +54,7 @@ Algorithm 刪尋選取演算法
 
 Input: 一個有n個元素的集合S，以及整數k。
 Output: 集合S內第k小的元素。
+
 步驟0: 若|S|<=10，則直接排序S中元素並輸出第k個元素後結束執行。
 步驟1: 將S分割為大小為5的子集合，共有[n/5]個。若n不能被5整除，則在最後一個子集合內增加值為的元素，使其補滿5個元素。
 步驟2: 直接排序每個子集合內的元素。
@@ -69,7 +72,8 @@ Output: 集合S內第k小的元素。
   * 步驟4: O\(n\)
   * 步驟5: T\(3n/4\)
 * 總時間複雜度: T\(n\) = T\(3n/4\)+T\(n/5\)+cn
-* ![](https://i.imgur.com/Fn2hJPG.png)
+
+![](https://i.imgur.com/Fn2hJPG.png)
 
 ## 限制的一圓心演算法 <a id="&#x9650;&#x5236;&#x7684;&#x4E00;&#x5713;&#x5FC3;&#x6F14;&#x7B97;&#x6CD5;"></a>
 
@@ -79,8 +83,8 @@ Output: 集合S內第k小的元素。
  ![](https://i.imgur.com/8Qk8e8w.png)
 
 * 基本暴力\(brute force\)法: 列出每一個可能的候選圓並檢查其是否能夠覆蓋所有的點:
-  * 任取三點做圓: 時間複雜度O\(n3\)
-  * 任取二點為直徑做圓: 時間時間複雜度O\(n2\)
+  * 任取三點做圓: 時間複雜度O\(n^3\)
+  * 任取二點為直徑做圓: 時間時間複雜度O\(n^2\)
   * 針對一個候選圓檢查是否能夠覆蓋所有的點: O\(n\)
 * 總時間複雜度: O\(n4\)
 
