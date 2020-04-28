@@ -60,7 +60,9 @@
   * 可變長度編碼: Huffman code
 * Huffman編碼以 **字首碼\(prefix code\)** 方式達到字元編碼最佳資料壓縮\(optimal data compression\)
   * 字首碼 \(prefix code\): 任何字元編碼一定不是其他字元編碼的字首\(prefix\)。
-  * 可以使用二元樹來呈現，達到簡單編碼\(encoding\)與解碼\(decoding\)的功能  ![](https://i.imgur.com/9nFCMcl.png)
+  * 可以使用二元樹來呈現，達到簡單編碼\(encoding\)與解碼\(decoding\)的功能  
+
+![](https://i.imgur.com/9nFCMcl.png)
 
 ### Cost <a id="Cost"></a>
 
@@ -68,7 +70,7 @@
 
 ### Algorithm <a id="Algorithm1"></a>
 
-```text
+```cpp
 Algorithm Huffman編碼演算法
 
 Input: 字元集合C與每個字元的出現頻率f
